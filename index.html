@@ -7,237 +7,208 @@
 
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <!-- ICON -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>I7_Pitriani | Monitor 2021</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <title>Pitriani's Portfolio | Data</title>
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Pitriani</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav
+      class="navbar navbar-expand-lg custom-navbar fixed-top"
+      style="background-color: #fff"
+    >
+      <div class="container py-2">
+        <a class="navbar-brand custom-logo" href="#">
+          <img
+            src="img/icon-blue.png"
+            alt="Logo"
+            width="28"
+            height="28"
+            class="d-inline-block align-text-top \"
+          />
+          PITRII
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link mx-3" aria-current="page" href="#">Home</a>
+            <a class="nav-link mx-3" href="#">About</a>
+            <a class="nav-link mx-3" href="#">Project</a>
+            <a class="nav-link mx-3" href="#">Contact</a>
+            <div class="navbar-nav cv px-2 mx-3">
+              <a class="nav-link" href="#" style="color: #fff">Download CV</a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
     <!-- Akhir Navbar -->
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/pt.jpeg" alt="Pitriani" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Pitriani</h1>
-      <p class="lead">Mahasiswa | Peserta Monitor</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="10"
-          d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,80C672,64,768,64,864,96C960,128,1056,192,1152,186.7C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Jumbotron -->
-
-    <!-- About -->
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#c7f4ff"
-          fill-opacity="10"
-          d="M0,128L30,149.3C60,171,120,213,180,224C240,235,300,213,360,192C420,171,480,149,540,160C600,171,660,213,720,197.3C780,181,840,107,900,101.3C960,96,1020,160,1080,197.3C1140,235,1200,245,1260,234.7C1320,224,1380,192,1410,176L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col" data-aos="fade-down">
-            <h2>About Me</h2>
-          </div>
+    <!-- Home -->
+    <div class="container text-center mt-5 py-5">
+      <div class="row justify-content-around">
+        <div class="col-12 col-md-6 text">
+          <h4>HI I am</h4>
+          <h3>Pitriani</h3>
+          <h1>Data scientist Enthausiast</h1>
+          <p>
+            Hello! I’m Pitriani a Data Science enthusiast who’s currently
+            learning and exploring the world of data. While I’m still early in
+            my journey and don’t have professional experience just yet, I’ve
+            worked on several dummy projects and academic assignments related to
+            data science during my time studying Informatic Engineering. I’m
+            excited to continue learning and growing in this field. If you’d
+            like to connect or have any questions, feel free to reach out!
+          </p>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4" data-aos="fade-right">
-            <p>I am a student at Sunan Gunung Jati University, Bandung, batch 2021.</p>
-          </div>
-          <div class="col-md-4" data-aos="fade-left">
-            <p>I am a 2021 monitor participant with participant number I7</p>
-          </div>
-        </div>
-      </div>
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="10"
-          d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,80C672,64,768,64,864,96C960,128,1056,192,1152,186.7C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    
-    <!-- Akhir About -->
-
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="col-12 col-md-4">
+          <div class="row mb-2">
+            <div class="col">
+              <div class="img-profile">
+                <img src="img/Profile.png" alt="" />
+              </div>
             </div>
-            <form name="wpu-contact-form">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+          </div>
+          <div class="row mt-4 justify-content-center sosmed">
+            <div class="col-2 p-2 sm-container">
+              <div class="social-media">
+                <a
+                  href="https://www.instagram.com/ptrnii__?igsh=bDF5c3lhNWRwNjY2"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+            </div>
+            <div class="col-2 p-2 sm-container">
+              <div class="social-media">
+                <a href="www.linkedin.com/in/pitriani"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
               </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+            </div>
+            <div class="col-2 p-2 sm-container">
+              <div class="social-media">
+                <a href="https://github.com/ppitria"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </div>
-              <button type="submit" class="btn btn-info btn-kirim">Kirim</button>
-
-              <button class="btn btn-info btn-loading d-none" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Loading...
-              </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#c7f4ff"
-          fill-opacity="10"
-          d="M0,128L30,149.3C60,171,120,213,180,224C240,235,300,213,360,192C420,171,480,149,540,160C600,171,660,213,720,197.3C780,181,840,107,900,101.3C960,96,1020,160,1080,197.3C1140,235,1200,245,1260,234.7C1320,224,1380,192,1410,176L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Contact -->
+    </div>
+    <!-- End Home -->
 
-    <!-- Footer -->
-    <footer class="bg-info text-black text-center pb-5">
-      <p>Created with <i class="bi bi-fill text-danger"></i> by <a href="https://www.instagram.com/ppitriani17/" class="text-black fw-bold">Pitriani</a></p>
+    <!-- START PROJECT -->
+    <div class="container-sm text-center py-5">
+      <h1 class="title">My Project</h1>
+      <div class="row align-items-center">
+        <div class="col-8 col-sm-6 col-md-3 mx-auto p-4">
+          <div class="card bg-body-tertiary rounded shadow">
+            <img src="img/project/p-1.jpg" class="card-img" alt="..." />
+            <div class="card-img-overlay custom-card">
+              <h6 class="card-title">Card title</h6>
+              <p class="card-text" style="font-size: 11px">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END PROJECT -->
+
+    <!-- START FOOTER -->
+    <footer>
+      <div class="contact-email container text-center py-5">
+        <h1>Contact</h1>
+        <p>
+          I'm always open to learning and connecting! If you have any questions
+          or just want to chat, feel free to reach out. You can check out my
+          practice projects on
+          <a href="https://github.com/ppitria">Github</a> or send me an email at
+          <a href="mailto:pitripitriani173@gmail.com"
+            >pitripitriani173@gmail.com</a
+          >
+        </p>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56400420092!2d107.56075536323542!3d-6.90344237938926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1712631034125!5m2!1sid!2sid"
+          width="100%"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="contact-sosmed">
+        <div class="contact-sosial-media">
+          <a href="https://www.instagram.com/ptrnii__?igsh=bDF5c3lhNWRwNjY2"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <div class="contact-sosial-media">
+          <a href="www.linkedin.com/in/pitriani"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+        <div class="contact-sosial-media">
+          <a href="https://github.com/ppitria"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copyright text-center small py-2">
+        &copy; 2025 <span>Pitriani</span>.
+      </div>
     </footer>
-    <!-- Akhir Footer -->
+    <!-- END FOOTER -->
 
+    <!-- JS BOOTSTRAP -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
-
-    <script>
-      gsap.from('.img-thumbnail', { duration: 2, rotationX: 360 });
-      gsap.from('.navbar', { duration: 1.5, opacity: 0, y: '-100%', ease: 'bounce' });
-      gsap.from('.display-4', { delay: 1, duration: 1, opacity: 0, x: '-10%' });
-
-      gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead', { delay: 1.5, duration: 2, text: 'Mahasiswa | Peserta Monitor' });
-
-      const galleryImages = document.querySelectorAll('.gallery-img');
-      const delayTimes = [0, 50, 100, 150, 200, 250, 300, 350, 400, 450];
-
-      function shuffleArray(array) {
-        for (var i = array.length - 1; i > 0; i--) {
-          var j = Math.floor(Math.random() * (i + 1));
-          var temp = array[i];
-          array[i] = array[j];
-          array[j] = temp;
-        }
-        return array;
-      }
-      const newDelay = shuffleArray(delayTimes);
-      galleryImages.forEach((img, i) => {
-        img.dataset.aos = 'fade-up';
-        img.dataset.aosDelay = i * 50 + '';
-        // img.dataset.aosDelay = newDelay[i];
-      });
-
-      AOS.init({
-        once: true,
-        duration: 3000,
-      });
-    </script>
-
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzjWwvjJihKz3-24SxEnHM5XFjNPgQd_dv3uD_fgjLSp_4AAXsC6IC4C_ECvWyLkGsuBg/exec';
-      const form = document.forms['wpu-contact-form'];
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
-
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        // ketika tombol submit diklik
-        // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then((response) => {
-            // tampilkan tombol kirim, hilangkan tombol loading
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            // tampilkan alert
-            myAlert.classList.toggle('d-none');
-            // reset formnya
-            form.reset();
-            console.log('Success!', response);
-          })
-          .catch((error) => console.error('Error!', error.message));
-      });
-    </script>
-
-    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
-    <script type="text/javascript">
-      VanillaTilt.init(document.querySelectorAll('.keyboard-box'), {
-        max: 35,
-        speed: 1000,
-        glare: true,
-      });
-    </script>
   </body>
 </html>
