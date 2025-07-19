@@ -1,164 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- ICON -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- My CSS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P's Portfolio | Data</title>
     <link rel="stylesheet" href="style.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
-    <title>Pitriani's Portfolio | Data</title>
   </head>
-  <body id="home">
+  <body>
     <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg custom-navbar fixed-top"
-      style="background-color: #fff"
-    >
-      <div class="container py-2">
-        <a class="navbar-brand custom-logo" href="#">
-          <img
-            src="img/icon-blue.png"
-            alt="Logo"
-            width="28"
-            height="28"
-            class="d-inline-block align-text-top \"
-          />
-          PITRII
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="img/icon-blue.png" alt="Logo" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link mx-3" aria-current="page" href="#">Home</a>
-            <a class="nav-link mx-3" href="#">About</a>
-            <a class="nav-link mx-3" href="#">Project</a>
-            <a class="nav-link mx-3" href="#">Contact</a>
-            <div class="navbar-nav cv px-2 mx-3">
-              <a class="nav-link" href="#" style="color: #fff">Download CV</a>
-            </div>
-          </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </nav>
-    <!-- Akhir Navbar -->
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
 
     <!-- Home -->
-    <div class="container text-center mt-5 py-5">
-      <div class="row justify-content-around">
-        <div class="col-12 col-md-6 text">
-          <h4>HI I am</h4>
-          <h3>Pitriani</h3>
-          <h1>Data scientist Enthausiast</h1>
-          <p>
-            Hello! I’m Pitriani a Data Science enthusiast who’s currently
-            learning and exploring the world of data. While I’m still early in
-            my journey and don’t have professional experience just yet, I’ve
-            worked on several dummy projects and academic assignments related to
-            data science during my time studying Informatic Engineering. I’m
-            excited to continue learning and growing in this field. If you’d
-            like to connect or have any questions, feel free to reach out!
-          </p>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="row mb-2">
-            <div class="col">
-              <div class="img-profile">
-                <img src="img/Profile.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="row mt-4 justify-content-center sosmed">
-            <div class="col-2 p-2 sm-container">
-              <div class="social-media">
-                <a
-                  href="https://www.instagram.com/ptrnii__?igsh=bDF5c3lhNWRwNjY2"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-            <div class="col-2 p-2 sm-container">
-              <div class="social-media">
-                <a href="www.linkedin.com/in/pitriani"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-              </div>
-            </div>
-            <div class="col-2 p-2 sm-container">
-              <div class="social-media">
-                <a href="https://github.com/ppitria"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="home">
+      <div class="container text-center">
+        <h2>Hi, I'm <span>Data Enthusiast</span></h2>
+        <p>
+          Hello! I’m a Data enthusiast who’s currently learning and exploring
+          the world of data. While I’m still early in my journey and don’t have
+          professional experience just yet, I’ve worked on several dummy
+          projects and academic assignments related to data science during my
+          time studying Informatic Engineering. I’m excited to continue learning
+          and growing in this field. If you’d like to connect or have any
+          questions, feel free to reach out!
+        </p>
       </div>
-    </div>
-    <!-- End Home -->
+    </section>
 
-    <!-- START PROJECT -->
-    <div class="container-sm text-center py-5">
-      <h1 class="title">My Project</h1>
-      <div class="row align-items-center">
-        <div class="col-8 col-sm-6 col-md-3 mx-auto p-4">
-          <div class="card bg-body-tertiary rounded shadow">
-            <img src="img/project/p-1.jpg" class="card-img" alt="..." />
-            <div class="card-img-overlay custom-card">
-              <h6 class="card-title">Card title</h6>
-              <p class="card-text" style="font-size: 11px">
+    <!-- Project -->
+    <section class="projects">
+      <div class="container">
+        <h1 class="section-title">My Project</h1>
+        <div class="card-list" id="project-preview">
+          <a href="project1.html" class="card">
+            <img src="img/project/img-picture.png" alt="Project" />
+            <div class="card-text">
+              <h3>Card Title</h3>
+              <p>
                 This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                lead-in to additional content.
               </p>
+              <small>Last updated 3 mins ago</small>
             </div>
-          </div>
+          </a>
+
+          <a href="project2.html" class="card">
+            <img src="img/project/img-picture.png" alt="Project" />
+            <div class="card-text">
+              <h3>Card Title</h3>
+              <p>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <small>Last updated 3 mins ago</small>
+            </div>
+          </a>
+        </div>
+        <div class="btn-wrapper">
+          <a href="projects.html" class="view-all-btn">View All Projects</a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- END PROJECT -->
-
-    <!-- START FOOTER -->
-    <footer>
-      <div class="contact-email container text-center py-5">
-        <h1>Contact</h1>
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="text-center">
+        <h1 class="section-title">Contact</h1>
         <p>
           I'm always open to learning and connecting! If you have any questions
           or just want to chat, feel free to reach out. You can check out my
@@ -168,47 +104,23 @@
             >pitripitriani173@gmail.com</a
           >
         </p>
-      </div>
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56400420092!2d107.56075536323542!3d-6.90344237938926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1712631034125!5m2!1sid!2sid"
-          width="100%"
-          height="200"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-
-      <div class="contact-sosmed">
-        <div class="contact-sosial-media">
-          <a href="https://www.instagram.com/ptrnii__?igsh=bDF5c3lhNWRwNjY2"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </div>
-        <div class="contact-sosial-media">
+        <div class="social-links">
+          <a href="https://github.com/ppitria"><i class="fab fa-github"></i></a>
           <a href="www.linkedin.com/in/pitriani"
-            ><i class="fa-brands fa-linkedin-in"></i
+            ><i class="fab fa-linkedin"></i
           ></a>
-        </div>
-        <div class="contact-sosial-media">
-          <a href="https://github.com/ppitria"
-            ><i class="fa-brands fa-github"></i
+          <a href="https://www.instagram.com/ptrnii__?igsh=bDF5c3lhNWRwNjY2"
+            ><i class="fab fa-instagram"></i
           ></a>
         </div>
       </div>
-      <div class="copyright text-center small py-2">
-        &copy; 2025 <span>Pitriani</span>.
-      </div>
-    </footer>
-    <!-- END FOOTER -->
+    </section>
 
-    <!-- JS BOOTSTRAP -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Footer -->
+    <footer>
+      <p class="copyright">&copy; 2025 <span>Pitriani</span></p>
+    </footer>
   </body>
+
+  <script src="scripts.js"></script>
 </html>
