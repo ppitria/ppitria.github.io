@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Data</title>
+
+    <link rel="stylesheet" href="../style-content.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="/index.html" class="navbar-brand"
+          ><strong>Pitri'</strong><span>Portfolio</span></a
+        >
+        <div class="menu-toggle">
+          <span class="menu-text">MENU</span>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Me</a></li>
+        <li><a href="/about.html#course">Training & Online Course</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/content/card_excel/excel_page.html">Back</a></li>
+      </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+      <section class="home">
+        <div class="container text-center">
+          <h3>Sales Transactions</h3>
+          <p>
+            Ini adalah proyek dummy yang berfokus pada pembuatan dashboard
+            interaktif menggunakan Microsoft Excel untuk memvisualisasikan data
+            penjualan secara dinamis. Dashboard ini dirancang untuk menampilkan
+            detail pesanan, pendapatan, laba, dan informasi pelanggan secara
+            informatif dan mudah dipahami.
+          </p>
+
+          <div class="btn-container">
+            <a
+              href="https://www.kaggle.com/datasets/shantanugarg274/sales-dataset"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-custom"
+              >View Dataset</a
+            >
+          </div>
+        </div>
+      </section>
+      <div class="content">
+        <h3>Project Description</h3>
+        <p>
+          Project ini berfokus pada pembuatan dashboard interaktif menggunakan
+          Microsoft Excel untuk menganalisis data penjualan ritel.
+        </p>
+        <br />
+
+        <h3>Dataset Description</h3>
+        <p>
+          Dataset ini berisi data transaksi penjualan yang mencakup rincian
+          pesanan, pendapatan, laba, dan informasi pelanggan. Total terdapat
+          1.194 baris dan 12 kolom, yaitu: Order ID, Amount, Profit, Quantity,
+          Category, Sub-Category, Payment Method, Order Date, Customer Name,
+          State, City, dan Year-Month. <br />
+          Dataset ini sudah dalam kondisi bersih sehingga dapat langsung
+          digunakan untuk proses analisis dan pembuatan dashboard.
+        </p>
+        <img src="/img/img_excel/1-dataset.png" alt="Table Dataset" />
+
+        <h3>Dashboard Design</h3>
+        <p>
+          Langkah awal dalam proses perancangan dashboard adalah menyusun
+          beberapa pertanyaan analisis untuk menentukan arah visualisasi data.
+          Beberapa pertanyaan yang menjadi acuan antara lain:
+        </p>
+        <ol>
+          <li>Berapa total pesanan yang diterima?</li>
+          <li>Berapa total pendapatan dari penjualan?</li>
+          <li>Berapa total profit penjualan?</li>
+          <li>Berapa kuantitas produk yang terjual?</li>
+          <li>Berapa nilai average order value (AOV)?</li>
+          <li>Berapa nilai profit margin?</li>
+          <li>Bagaimana tren pendapatan/profit dari waktu ke waktu?</li>
+          <li>Berapa jumlah produk terjual perkategori?</li>
+          <li>Bagaimana profit perkategori?</li>
+          <li>Apa saja produk terlaris?</li>
+          <li>Siapa customer paling loyal?</li>
+          <li>Bagaimana sebaran customer per state/city?</li>
+          <li>Apa metode pembayaran yang sering digunakan?</li>
+        </ol>
+
+        <p>
+          Pertanyaan-pertanyaan tersebut kemudian dijawab dengan menyusun Pivot
+          Table, yang menjadi dasar visualisasi dalam bentuk berbagai chart
+          untuk menampilkan hasil analisis utama.
+        </p>
+        <img src="/img/img_excel/1-chart_source.png" alt="Pivot Table" />
+        <p>
+          Untuk meningkatkan interaktivitas, saya menambahkan Slicer berdasarkan
+          kategori produk dan state, serta Timeline untuk filter periode waktu.
+          <br />
+          Dengan ini, dashboard secara efektif menyajikan informasi penjualan
+          dalam format yang jelas, interaktif, dan mudah dipahami.
+        </p>
+        <img src="/img/img_excel/1-dashboard.png" alt="Dashboard" />
+
+        <h3>Insights gained?</h3>
+        <ul>
+          <li>
+            Selama periode Maret 2020 hingga Maret 2025, terdapat 547 transaksi
+            dengan profit margin rata-rata 26%. Dengan puncak pendapatan pada
+            2022, meski fluktuasi bulanan cukup dinamis
+          </li>
+          <li>
+            Namun, nilai rata-rata transaksi (AOV) menunjukkan tren penurunan
+            sejak 2023, terutama Ohio yang menyumbang rata-rata transaksi di
+            bawah $300. Dampaknya terlihat pada penurunan profit margin menjadi
+            19.71% di 2024. Hal ini menunjukkan pelanggan di wilayah ini
+            cenderung membeli produk dengan nilai rendah, sejalan dengan temuan
+            pada category chart yang menunjukkan penjualan tinggi pada kategori
+            office supplies dibanding furniture dan electronic
+          </li>
+          <li>
+            Secara geografis, New York dan California menjadi pusat pelanggan
+            terbesar, namun Florida menyumbang profit margin tertinggi, dengan
+            selisih sekitar 1% dibanding New York
+          </li>
+          <li>
+            Adapun kategori furniture, khususnya produk table, menjadi
+            kontributor utama penjualan
+          </li>
+        </ul>
+        <p>
+          Berdasarkan temuan ini, fokus strategi dapat diarahkan pada
+          peningkatan nilai transaksi di wilayah dengan AOV rendah seperti Ohio
+          melalui bundling produk atau upselling, serta mempertahankan profit
+          tinggi di Florida dan New York dengan memperkuat produk unggulan
+        </p>
+        <br />
+
+        <h3>What I Learned?</h3>
+        <p>Dari proyek ini saya belajar:</p>
+        <ul>
+          <li>Mengorganisir data agar siap dianalisis di Excel</li>
+          <li>Menggunakan Tabel Pivot untuk mengeksplorasi data</li>
+          <li>Merancang dasbor yang informatif dan ramah pengguna</li>
+          <li>
+            Membuat visualisasi yang mengomunikasikan wawasan secara efektif
+          </li>
+        </ul>
+
+        <p>
+          Proyek ini membantu saya memahami bagaimana kumpulan data sederhana
+          dapat diubah menjadi insight yang bermakna menggunakan Excel sebagai
+          alat analisis data.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="social-links">
+        <a href="https://github.com/ppitria" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/pitriani" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/ptrnii__?igsh=bDF5c3lhNWRwNjY2"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="mailto:pitripitriani173@gmail.com" target="_blank"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>

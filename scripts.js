@@ -1,8 +1,8 @@
-const hamburger = document.getElementById("hamburger");
+const menuToggle = document.querySelector(".menu-toggle");
 const sidebar = document.getElementById("sidebar");
 const overlay = document.getElementById("overlay");
 
-hamburger.addEventListener("click", () => {
+menuToggle.addEventListener("click", () => {
   sidebar.classList.toggle("active");
   overlay.classList.toggle("active");
 });
@@ -10,6 +10,13 @@ hamburger.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   sidebar.classList.remove("active");
   overlay.classList.remove("active");
+});
+
+document.querySelectorAll(".sidebar a").forEach((link) => {
+  link.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+    overlay.classList.remove("active");
+  });
 });
 
 const previewContainer = document.getElementById("project-preview");

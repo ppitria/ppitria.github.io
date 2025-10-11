@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Data</title>
+
+    <link rel="stylesheet" href="../style-content.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="/index.html" class="navbar-brand"
+          ><strong>Pitri'</strong><span>Portfolio</span></a
+        >
+        <div class="menu-toggle">
+          <span class="menu-text">MENU</span>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Me</a></li>
+        <li><a href="/about.html#course">Training & Online Course</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+      <section class="home">
+        <div class="container text-center">
+          <h2>Python</h2>
+          <p>
+            Welcome to my Python-based data processing journey. Pada bagian ini,
+            saya menampilkan proyek-proyek yang saya kerjakan menggunakan Python
+            untuk membersihkan, menyiapkan, dan menganalisis data sebelum
+            digunakan dalam tahap visualisasi atau pengambilan keputusan.
+          </p>
+        </div>
+      </section>
+
+      <!-- Project -->
+      <section class="projects" id="project">
+        <div class="container">
+          <div class="project-item">
+            <img
+              src="/img/img_python/1-skripsi.png"
+              alt="Loss Training & Validation"
+            />
+            <div class="project-text">
+              <h3>
+                AI-Generated Text Detection for Automated Essay Grading
+                (SKRIPSI)
+              </h3>
+              <p>
+                Mengeksplorasi bagaimana model IndoBERT dapat digunakan untuk
+                mendeteksi teks generatif AI dan menilai jawaban esai secara
+                otomatis menggunakan Python
+              </p>
+
+              <div class="btn-container">
+                <a href="./deteksi_penilaian.html" class="btn-custom"
+                  >View Detail</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="social-links">
+        <a href="https://github.com/ppitria" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/pitriani" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/ptrnii__?igsh=bDF5c3lhNWRwNjY2"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="mailto:pitripitriani173@gmail.com"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>

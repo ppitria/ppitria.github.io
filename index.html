@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>P's Portfolio | Data</title>
+    <title>Portfolio Data</title>
 
-    <base href="/ppitria.github.io" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -15,114 +14,135 @@
   </head>
   <body>
     <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="navbar">
       <div class="container">
-        <a href="#" class="logo">
-          <img src="img/icon-blue.png" alt="Logo" />
-        </a>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+        <a href="../index.html" class="navbar-brand"
+          ><strong>Pitri'</strong><span>Portfolio</span></a
+        >
+        <div class="menu-toggle">
+          <span class="menu-text">MENU</span>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </nav>
 
+    <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="/about.html">About Me</a></li>
+        <li><a href="/about.html#course">Training & Online Course</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
+
+    <!-- Overlay -->
     <div class="overlay" id="overlay"></div>
 
-    <!-- Home -->
-    <section class="home">
-      <div class="container text-center">
-        <h2>Hi, I'm <span>Data Enthusiast</span></h2>
-        <p>
-          Hello! I’m a Data enthusiast who’s currently learning and exploring
-          the world of data. While I’m still early in my journey and don’t have
-          professional experience just yet, I’ve worked on several dummy
-          projects and academic assignments related to data science during my
-          time studying Informatic Engineering. I’m excited to continue learning
-          and growing in this field. If you’d like to connect or have any
-          questions, feel free to reach out!
-        </p>
-      </div>
-    </section>
-
-    <!-- Project -->
-    <section class="projects">
-      <div class="container">
-        <h1 class="section-title">My Project</h1>
-        <div class="card-list" id="project-preview">
-          <a href="project1.html" class="card">
-            <img src="img/project/img-picture.png" alt="Project" />
-            <div class="card-text">
-              <h3>Card Title</h3>
-              <p>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content.
-              </p>
-              <small>Last updated 3 mins ago</small>
-            </div>
-          </a>
-
-          <a href="project2.html" class="card">
-            <img src="img/project/img-picture.png" alt="Project" />
-            <div class="card-text">
-              <h3>Card Title</h3>
-              <p>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content.
-              </p>
-              <small>Last updated 3 mins ago</small>
-            </div>
-          </a>
+    <main>
+      <!-- Home -->
+      <section id="home" class="home">
+        <div class="container text-center">
+          <h2>Hi, my name is Pitriani</h2>
+          <p>
+            Welcome to my data analytics portfolio. Di sini saya mengumpulkan
+            beberapa dummy projects yang saya buat untuk melatih kemampuan
+            analisis data dan memperdalam pemahaman saya terhadap proses
+            pengolahan data.
+          </p>
         </div>
-        <div class="btn-wrapper">
-          <a href="projects.html" class="view-all-btn">View All Projects</a>
+        <div class="btn-aboutme">
+          <a href="/about.html" class="aboutme-btn">About Me</a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-      <div class="text-center">
-        <h1 class="section-title">Contact</h1>
-        <p>
-          I'm always open to learning and connecting! If you have any questions
-          or just want to chat, feel free to reach out. You can check out my
-          practice projects on
-          <a href="https://github.com/ppitria">Github</a> or send me an email at
-          <a href="mailto:pitripitriani173@gmail.com"
-            >pitripitriani173@gmail.com</a
-          >
-        </p>
-        <div class="social-links">
-          <a href="https://github.com/ppitria"><i class="fab fa-github"></i></a>
-          <a href="www.linkedin.com/in/pitriani"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://www.instagram.com/ptrnii__?igsh=bDF5c3lhNWRwNjY2"
-            ><i class="fab fa-instagram"></i
-          ></a>
+      <!-- Project -->
+      <section class="projects" id="project">
+        <div class="container">
+          <div class="card-list" id="project-preview">
+            <a href="/content/card_python/python_page.html">
+              <div class="custom-card">
+                <div class="custom-card-title">
+                  <img src="img/icon-python.png" alt="Python Logo" />
+                  <h3>Python</h3>
+                </div>
+
+                <hr />
+                <p>Mengolah dan menyiapkan data menggunakan pustaka Python</p>
+              </div>
+            </a>
+
+            <a href="/content/card_excel/excel_page.html">
+              <div class="custom-card">
+                <div class="custom-card-title">
+                  <img src="img/icon-excel.png" alt="Python Logo" />
+                  <h3>Excel</h3>
+                </div>
+
+                <hr />
+                <p>
+                  Menganalisis data dan membuat dashboard interaktif dengan
+                  Excel
+                </p>
+              </div>
+            </a>
+
+            <a href="/content/card_sql/sql_page.html">
+              <div class="custom-card">
+                <div class="custom-card-title">
+                  <img src="img/icon-sql.png" alt="SQL" />
+                  <h3>SQL</h3>
+                </div>
+
+                <hr />
+                <p>Menulis query untuk mengorganisir dan menganalisis data</p>
+              </div>
+            </a>
+
+            <a href="/content/card_tableau/tableau_page.html">
+              <div class="custom-card">
+                <div class="custom-card-title">
+                  <img src="img/icon-tableau.png" alt="Python Logo" />
+                  <h3>Tableau</h3>
+                </div>
+
+                <hr />
+                <p>
+                  Menyajikan visualisasi data yang jelas dan interaktif dengan
+                  Tableau
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-      <p class="copyright">&copy; 2025 <span>Pitriani</span></p>
+    <footer id="contact">
+      <div class="social-links">
+        <a href="https://github.com/ppitria" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/pitriani" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/ptrnii__?igsh=bDF5c3lhNWRwNjY2"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="mailto:pitripitriani173@gmail.com" target="_blank"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
     </footer>
-  </body>
 
-  <script src="scripts.js"></script>
+    <script src="/scripts.js"></script>
+  </body>
 </html>
