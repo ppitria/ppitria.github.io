@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Data</title>
+
+    <link rel="stylesheet" href="../style-content.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="/index.html" class="navbar-brand"
+          ><strong>Pitri'</strong><span>Portfolio</span></a
+        >
+        <div class="menu-toggle">
+          <span class="menu-text">MENU</span>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About Me</a></li>
+        <li><a href="/about.html#course">Training & Online Course</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/content/card_tableau/tableau_page.html">Back</a></li>
+      </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+      <section class="home">
+        <div class="container text-center">
+          <h3>Restuarant Sales</h3>
+          <p>
+            Proyek ini merupakan analisis dummy tentang penjualan restoran yang
+            dibuat menggunakan Tableau. Tujuan analisis ini adalah untuk
+            membandingkan performa penjualan bulan ini dengan bulan sebelumnya,
+            baik dari sisi pendapatan, serta kuantitas produk terjual. Dataset
+            yang digunakan diambil dari Kaggle, dan dapat diakses melalui tautan
+            yang tersedia.
+          </p>
+
+          <div class="btn-container">
+            <a
+              href="https://www.kaggle.com/datasets/rohitgrewal/restaurant-sales-data"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-custom"
+              >View Dataset</a
+            >
+          </div>
+        </div>
+      </section>
+      <div class="content">
+        <h3>Objective</h3>
+        <p>Analisis ini berfokus pada beberapa pertanyaan utama berikut:</p>
+        <ol>
+          <li>
+            Bagaimana perubahan total pendapatan antara bulan ini dan bulan
+            sebelumnya?
+          </li>
+          <li>
+            Apakah jumlah produk yang terjual meningkat dibandingkan periode
+            sebelumnya?
+          </li>
+          <li>
+            Produk apa yang menyumbang pendapatan tertinggi dan bagaimana
+            perubahannya dari bulan sebelumnya?
+          </li>
+          <li>
+            Kota mana yang mengalami pertumbuhan atau penurunan penjualan paling
+            besar?
+          </li>
+          <li>Bagaimana preferensi metode pembayaran yang digunakan?</li>
+        </ol>
+
+        <h3>Visualisasi dan Hasil</h3>
+        <p>
+          Dashboard interaktif yang menampilkan hasil analisis dapat dilihat
+          melalui tautan Tableau Public berikut:
+          <a
+            href="https://public.tableau.com/app/profile/pitriani.pitriani/viz/RestaurantSalesMonthAnalysisBelajar/Dashboard"
+          >
+            "Klik disini untuk membuka dashboard di Tableau"</a
+          >
+        </p>
+        <p>Hasil analisis:</p>
+        <ul>
+          <li>
+            Penjualan dan kuantitas terjual mengalami peningkatan dibandingkan
+            bulan sebelumnya, meskipun terdapat penurunan tajam pada tanggal 4.
+            Namun setelah itu, performa penjualan kembali stabil dan meningkat
+            secara signifikan.
+          </li>
+          <li>
+            Produk dengan sales tertinggi adalah burger, naik sebesar 50,68%
+            dibanding bulan sebelumnya. Sebaliknya, menu fries mengalami
+            penurunan sebesar –4,49%.
+          </li>
+          <li>
+            Dari sisi wilayah, Lisbon mencatat pertumbuhan tertinggi dengan
+            kenaikan 223,25%, diikuti oleh Berlin yang meningkat secara luar
+            biasa hingga 766,83%. Sebaliknya, Paris mengalami penurunan sebesar
+            –46,57%, yang juga tercermin pada hampir semua produk di kota
+            tersebut.
+          </li>
+          <li>
+            Metode pembayaran yang paling sering digunakan adalah credit card
+            (46%). Namun, preferensi pembayaran berbeda di setiap kota,
+            misalnya, Lisbon dan Berlin lebih banyak menggunakan cash, sedangkan
+            London lebih dominan dengan credit card.
+          </li>
+          <li>
+            Beverage menjadi produk dengan kuantitas terjual terbanyak, hampir
+            mencapai 20.000 unit. Menariknya, burger tetap menghasilkan sales
+            tertinggi meski jumlah terjualnya lebih sedikit, kemungkinan karena
+            harga per unit yang lebih tinggi.
+          </li>
+        </ul>
+
+        <p>
+          Berdasarkan hasil evaluasi diatas, beberapa rekomendasi yang dapat
+          dipertimbangkan:
+        </p>
+        <ol>
+          <li>
+            Fokus pada promosi menu fries, karena meskipun populer, penjualannya
+            menurun. Penawaran bundling dengan burger atau diskon musiman bisa
+            membantu menaikkan kembali performanya.
+          </li>
+          <li>
+            Evaluasi strategi di Paris, karena mengalami penurunan signifikan di
+            hampir semua produk. Perlu ditelusuri penyebabnya, apakah karena
+            harga, promosi, atau preferensi pelanggan lokal
+          </li>
+          <li>
+            Pertahankan strategi di Lisbon dan Berlin, dua kota dengan
+            pertumbuhan penjualan tertinggi.
+          </li>
+          <li>
+            Pertahankan strategi harga burger, karena meskipun tidak menjadi
+            produk dengan jumlah penjualan tertinggi, kontribusi pendapatannya
+            sangat besar.
+          </li>
+        </ol>
+        <br />
+        <img
+          src="/img/img_tableau/1_restaurant_sales_dashboard.png"
+          alt="Restuarant Sales"
+        />
+
+        <br />
+        <h3>What I Learned?</h3>
+        <p>Dari proyek ini saya belajar:</p>
+        <ul>
+          <li>
+            Memahami cara membandingkan data penjualan antar periode menggunakan
+            Tableau
+          </li>
+          <li>
+            Mempelajari bagaimana tren dan anomali penjualan bisa dilihat dengan
+            visualisasi data.
+          </li>
+          <li>
+            Mengasah kemampuan dasar dalam membuat dashboard interaktif untuk
+            mendukung pengambilan keputusan bisnis.
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="social-links">
+        <a href="https://github.com/ppitria" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/pitriani" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/ptrnii__?igsh=bDF5c3lhNWRwNjY2"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="mailto:pitripitriani173@gmail.com" target="_blank"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>

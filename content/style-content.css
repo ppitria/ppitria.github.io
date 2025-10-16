@@ -356,3 +356,9 @@ footer .social-links a:hover {
 .content li {
   margin-bottom: 0.3rem;
 }
+
+.content a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #003459;
+}
