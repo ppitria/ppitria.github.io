@@ -45,145 +45,66 @@
     <div class="overlay" id="overlay"></div>
 
     <main>
-      <section class="home">
-        <div class="container text-center">
-          <h2>Online Retail Sales using SQL</h2>
-          <p>
-            Sebuah proyek analisis data berbasis SQL yang dirancang untuk
-            mempelajari transaksi ritel online. Proyek ini berfokus pada
-            pengambilan wawasan terkait revenue, aktivitas pelanggan, dan
-            kategori produk, sambil menerapkan operasi dasar SQL seperti JOIN,
-            GROUP BY, dan ORDER BY.
-          </p>
-
-          <div class="btn-container">
-            <a
-              href="https://www.kaggle.com/datasets/rishikumarrajvansh/marketing-insights-for-e-commerce-company"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn-custom"
-              >View Dataset</a
-            >
-          </div>
-        </div>
-      </section>
-      <div class="content">
-        <h3>Objective</h3>
-        <p>
-          Membuat query untuk menganalisis performa penjualan dan perilaku
-          pelanggan melalui data transaksi.
-        </p>
+      <section class="container home-project">
+        <h1>Online Retail Sales Exploration using SQL (Dummy Data Project)</h1>
+        <h3>
+          Eksplorasi data penjualan ritel untuk memahami performa transaksi dan
+          perilaku pelanggan menggunakan SQL.
+        </h3>
         <br />
+        <p>
+          Proyek ini merupakan latihan
+          <strong
+            >eksplorasi data menggunakan SQL untuk memahami penggunaan query
+            dalam proses analisis sederhana</strong
+          >. Fokus utamanya adalah menulis dan
+          <strong
+            >mengoptimalkan perintah SQL seperti JOIN, GROUP BY, dan fungsi
+            agregasi (SUM, COUNT, AVG)</strong
+          >
+          untuk menghasilkan informasi dasar seperti
+          <strong
+            >total transaksi, pendapatan, pelanggan teraktif, dan distribusi
+            penjualan berdasarkan lokasi</strong
+          >.
+          <br />
+          Walaupun proyek ini bersifat eksploratif, prosesnya membantu saya
+          memahami penggunaan SQL sebagai alat dalam pengolahan dan interpretasi
+          data mentah. Melalui proyek ini, saya belajar menyusun query yang
+          efisien, menjaga konsistensi struktur database, serta memperoleh
+          insight dasar dari data hanya melalui kode SQL.
+        </p>
 
-        <h3>Preparation</h3>
+        <br />
+        <strong> Tools: SQL </strong>
+        <iframe
+          src="/media/media_sql/1_Online Retail Sales - SQL.pdf"
+          width="100%"
+          height="500px"
+        ></iframe>
+
+        <br /><br />
+
         <ul>
-          <li>Tools: DBeaver</li>
-          <li>Database: MySQL</li>
+          <strong>Dari proyek ini saya belajar:</strong>
           <li>
-            Dataset Source: Dataset dari Kaggle (terdapat beberapa file CSV )
+            Membuat query SQL untuk analisis deskriptif seperti total transaksi,
+            pendapatan, dan perilaku pelanggan.
           </li>
           <li>
-            Membuat database baru dan mengimpor semua file CSV ke dalam tabel
-            terpisah untuk dianalisis
+            Menggunakan JOIN untuk menggabungkan beberapa tabel transaksi,
+            pelanggan, dan produk.
+          </li>
+          <li>
+            Memanfaatkan GROUP BY, HAVING, dan fungsi agregasi untuk analisis
+            berbasis kelompok
+          </li>
+          <li>
+            Menulis query yang efisien, terstruktur, dan mudah dibaca dengan
+            penggunaan alias dan komentar.
           </li>
         </ul>
-
-        <h3>Basic Analysis Using SQL Queries</h3>
-        <p>Beberapa pertanyaan sederhana dibuat sebagai panduan:</p>
-        <ol>
-          <li>Berapa total transaksi dan total revenue?</li>
-          <li>Siapa pelanggan dengan total pembelian tertinggi?</li>
-          <li>Siapa pelanggan dengan total transaksi terbanyak?</li>
-          <li>
-            Bagaimana perbandingan total revenue berdasarkan lokasi pelanggan?
-          </li>
-          <li>Produk kategori mana yang paling menguntungkan?</li>
-          <li>Seberapa sering penggunaan kupon pada transaksi?</li>
-        </ol>
-
-        <h3>Analysis Results</h3>
-        <ol>
-          <li>
-            Total transaksi dan total revenue: terdapat 52924 transaksi dengan
-            total revenue $5227429.69
-            <img
-              src="/img/img_sql/transaction_revenue.png"
-              alt="Transactions & Reveue"
-            />
-          </li>
-          <li>
-            Top 10 kustomer dengan pembelian tertinggi: Sebagian besar kustomer
-            teratas adalah pelanggan perempuan (8 dari 10), dengan pengeluaran
-            tertinggi mencapai $83.112,26
-            <img
-              src="/img/img_sql/top_cus_spending.png"
-              alt="Customer Spending"
-            />
-          </li>
-          <li>
-            Top 10 kustomer dengan transaksi terbanyak: Pelanggan dengan jumlah
-            transaksi terbanyak sebagian besar adalah perempuan (7 dari 10),
-            dengan jumlah transaksi maksimum mencapai 328
-            <img
-              src="/img/img_sql/top_cus_transaction.png"
-              alt="Customer Transaction"
-            />
-          </li>
-          <li>
-            Revenue berdasarkan lokasi: Lokasi dengan total pendapatan tertinggi
-            adalah Chicago, sedangkan Washington DC memiliki pendapatan
-            terendah, dengan selisih sekitar 1,5 juta dolar
-
-            <img
-              src="/img/img_sql/revenue_location.png"
-              alt="Revenue by Location"
-            />
-          </li>
-          <li>
-            Rata-rata Revenue per kategori produk: Tiga kategori produk dengan
-            rata-rata pendapatan tertinggi adalah Nest, Nest-Canada, dan
-            Nest-US, sedangkan tiga kategori produk dengan rata-rata pendapatan
-            terendah adalah Lifestyle, Android, dan Waze
-
-            <img
-              src="/img/img_sql/avg_revenue_product.png"
-              alt="Average Revenue per Category Product"
-            />
-          </li>
-          <li>
-            Penggunaan kupon pada transaksi: Sebanyak 17.904 transaksi
-            menggunakan kupon. Sebagian besar pelanggan hanya mengklik kupon
-            tanpa menggunakannya (26.926 transaksi), sementara 8.094 transaksi
-            tidak melibatkan penggunaan kupon sama sekali.
-
-            <img src="/img/img_sql/coupon_used.png" alt="Coupon Usage" />
-          </li>
-        </ol>
-
-        <h3>What I Learned?</h3>
-        <p>
-          Selama mengerjakan project ini, saya belajar banyak hal dasar dalam
-          SQL, di antaranya
-        </p>
-        <ul>
-          <li>Cara menggunakan JOIN untuk menggabungkan beberapa tabel</li>
-          <li>
-            Pemahaman tentang GROUP BY, ORDER BY, dan fungsi agregasi dasar
-            seperti SUM, AVG, dan COUNT
-          </li>
-          <li>Penggunaan DISTINCT untuk menghitung nilai unik</li>
-          <li>
-            Pentingnya menulis query dengan rapi dan memberi alias agar mudah
-            dibaca
-          </li>
-        </ul>
-
-        <p>
-          Proyek ini relatif sederhana, tetapi membantu saya memperkuat
-          pemahaman tentang dasar-dasar SQL dan bagaimana mengubah data mentah
-          menjadi informasi
-        </p>
-      </div>
+      </section>
     </main>
 
     <!-- Footer -->

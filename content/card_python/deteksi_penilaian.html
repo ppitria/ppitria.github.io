@@ -45,83 +45,62 @@
     <div class="overlay" id="overlay"></div>
 
     <main>
-      <section class="home">
-        <div class="container text-center">
-          <h3>Deteksi Teks Generatif AI pada Penilaian Otomatis</h3>
-          <p>
-            Ini merupakan proyek skripsi, dimana saya mengembangkan sistem
-            sederhana yang dapat mendeteksi kemungkinan penggunaan teks
-            generatif AI dalam jawaban esai sekaligus melakukan penilaian
-            otomatis berdasarkan kesamaan makna terhadap kunci jawaban.
-          </p>
-        </div>
+      <section class="container home-project">
+        <h1>AI-Geneative Text Detection (Tugas Akhir)</h1>
+        <h3>
+          Merancang Model Deteksi Teks Generatif AI pada Sistem Penilaian Esai
+          Otomatis melalui Fine-Tuning IndoBERT
+        </h3>
+
+        <br />
+        <p>
+          Proyek ini merupakan penelitian tugas akhir yang berfokus pada deteksi
+          teks generatif AI dalam sistem penilaian esai otomatis. Tujuannya
+          adalah mengukur persentase kemungkinan suatu jawaban dihasilkan oleh
+          AI. Hasil akhir berupa sistem yang mengintegrasikan model deteksi teks
+          generatif dengan <strong>akurasi 92%</strong>, dibangun melalui
+          fine-tuning IndoBERT dari Hugging Face. Proyek ini juga dituangkan
+          dalam <strong>artikel ilmiah</strong> yang dapat diakses di tautan
+          berikut (<a
+            href="https://jurnal.untan.ac.id/index.php/jepin/article/view/93221"
+            target="_blank"
+            >Deteksi Generatif Teks pada Penilaian Otomatis Tes Esai Berbahasa
+            Indonesia Menggunakan IndoBERT</a
+          >).
+        </p>
+
+        <br />
+        <iframe
+          src="/media/media_python/1_Detection GenAI - Python.pdf"
+          width="100%"
+          height="500px"
+        ></iframe>
+
+        <br />
+        <br />
+        <ul>
+          <strong>Dari proyek ini saya belajar:</strong>
+          <li>
+            Melakukan fine-tuning model pre-trained IndoBERT untuk tugas
+            klasifikasi spesifik
+          </li>
+          <li>
+            Memahami pentingnya persiapan dan kualitas data sebelum proses
+            training untuk mendapatkan hasil yang optimal
+          </li>
+          <li>
+            Mempelajari pengaturan hyperparameter dalam proses optimasi model
+          </li>
+          <li>
+            Mengimplementasikan model deteksi ke dalam web sederhana menggunakan
+            Flask
+          </li>
+          <li>
+            Menyusun dan mempublikasikan hasil penelitian dalam bentuk artikel
+            ilmiah
+          </li>
+        </ul>
       </section>
-      <div class="content">
-        <h3>Summary Project</h3>
-        <p>
-          Proyek ini menggabungkan dua tugas utama: mendeteksi teks hasil
-          generatif AI dan menilai otomatis jawaban esai.
-        </p>
-        <br />
-        <p>
-          Berangkat dari meningkatnya penggunaan model AI seperti ChatGPT untuk
-          menyelesaikan tugas akademik khususnya dalam menjawab soal ujian esai.
-          Tujuannya adalah membantu pendidik membedakan mana jawaban yang
-          ditulis oleh manusia dan mana yang dihasilkan oleh AI, sekaligus
-          memberikan penilaian otomatis berdasarkan kesamaan semantik dengan
-          kunci jawaban, serta penerapan penalti berupa pengurangan nilai
-          apabila terindikasi penggunaan AI .
-        </p>
-
-        <br />
-        <p>Sistem ini terdiri dari dua komponen utama</p>
-        <ul>
-          <li>
-            Model deteksi AI-generated text menggunakan model pre-trained
-            IndoBERT melalui proses fine-tuning, yang mampu mencapai akurasi 92%
-            pada data pengujian
-          </li>
-          <li>
-            Penilaian otomatis yang menghitung kesamaan semantik antara jawaban
-            dan kunci jawaban menggunakan cosine similarity
-          </li>
-        </ul>
-
-        <p>
-          Kedua komponen tersebut diintegrasikan dalam satu pipeline yang
-          menghasilkan skor akhir, dengan penyesuaian nilai jika ditemukan
-          indikasi penggunaan teks AI. Proyek ini diimplementasikan dalam
-          aplikasi web sederhana berbasis Flask yang menampilkan hasil deteksi
-          dalam bentuk persentase, skor semantik, dan nilai akhir
-        </p>
-
-        <img src="/img/img_python/1-skripsi-hasil.png" alt="Tampilan" />
-
-        <h3>Tools</h3>
-        <ul>
-          <li>Python</li>
-          <li>HuggingFace (IndoBERT)</li>
-          <li>Scikit-learn, Numpy, Pandas</li>
-          <li>Flask (untuk web interface)</li>
-        </ul>
-
-        <h3>What I Learned?</h3>
-        <ul>
-          <li>Melakukan fine-tuning model IndoBERT untuk tugas deteksi teks</li>
-          <li>
-            Melakukan hyperparameter tuning dan memahami pengaruhnya terhadap
-            akurasi
-          </li>
-          <li>
-            Menyadari pentingnya kualitas dan keseimbangan dataset dalam NLP
-          </li>
-          <li>Mengintegrasikan dua model berbeda dalam satu sistem terpadu</li>
-          <li>
-            Mengembangkan aplikasi web sederhana untuk menampilkan hasil
-            analisis
-          </li>
-        </ul>
-      </div>
     </main>
 
     <!-- Footer -->
