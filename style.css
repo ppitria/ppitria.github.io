@@ -141,7 +141,9 @@ main {
   font-size: 1.2rem;
   font-weight: 500;
   border-radius: 6px;
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 .sidebar.active {
@@ -172,13 +174,13 @@ main {
 }
 
 .home h1 {
-  font-size: 2.7rem;
+  font-size: 2rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .home p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--gray);
   max-width: 800px;
   margin: 0 auto;
@@ -187,7 +189,7 @@ main {
 .btn-aboutme {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .aboutme-btn {
@@ -199,7 +201,9 @@ main {
   border-radius: 5px;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s, opacity 0.3s;
+  transition:
+    background-color 0.3s,
+    opacity 0.3s;
 }
 
 .aboutme-btn:hover {
@@ -218,7 +222,7 @@ main {
     var(--primary),
     transparent
   );
-  margin: 2rem 0;
+  margin: 0.5rem 0;
 }
 
 .about-after::after {
@@ -227,12 +231,15 @@ main {
   height: 3px;
   width: 100%;
   background: linear-gradient(to right, transparent, var(--gray), transparent);
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 /* card */
-.projects {
-  padding: 1.6rem 0 4rem;
+.projects .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem auto;
 }
 .line::after {
   content: "";
@@ -245,20 +252,20 @@ main {
     var(--primary),
     transparent
   );
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 .projects h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .project-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 4rem 0 3rem;
+  align-items: stretch;
+  margin: 0;
   background: var(--light);
   border-radius: 12px;
   overflow: hidden;
@@ -267,24 +274,24 @@ main {
 
 .project-item img {
   width: 100%;
-  height: 200px;
-  object-fit: contain;
+  height: 100px;
+  object-fit: cover;
   background: #fff;
 }
 
 .project-text {
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: left;
 }
 
 .project-text h3 {
-  margin-bottom: 0.5rem;
-  font-size: 22px;
+  margin-bottom: 0.3rem;
+  font-size: 20px;
   color: var(--dark);
 }
 
 .project-text p {
-  font-size: 14px;
+  font-size: 12px;
   color: var(--gray);
 }
 
@@ -301,7 +308,9 @@ main {
   border-radius: 5px;
   text-decoration: none;
   font-size: 14px;
-  transition: background-color 0.3s, opacity 0.3s;
+  transition:
+    background-color 0.3s,
+    opacity 0.3s;
 }
 
 .btn-custom:hover {
@@ -311,7 +320,7 @@ main {
 
 /* Training & Online Course*/
 .course h3 {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 .list-course {
   margin: auto;
@@ -351,28 +360,17 @@ footer .social-links a:hover {
   color: var(--gray);
 }
 
-/* Desktop layout */
+/* Tablet */
 @media (min-width: 768px) {
-  .project-item {
-    flex-direction: row;
-    align-items: center;
+  .projects .container {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .project-item img {
-    width: 50%;
-    height: 100%;
-  }
-
-  .project-item .project-text {
-    width: 50%;
-  }
-
-  .project-item:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  .project-item:nth-child(even) .project-text {
-    text-align: right;
+/* Desktop */
+@media (min-width: 1200px) {
+  .projects .container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -405,37 +403,10 @@ h3 {
   text-align: start;
 }
 
-.home h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: var(--primary);
-}
-
-.content {
-  padding: 2rem 4rem 4rem;
-}
-.content h3 {
-  color: var(--dark);
-}
-.content p {
-  color: var(--gray);
-}
-.content img {
-  display: block;
-  max-width: 70%;
-  height: auto;
-  padding: 1rem;
-  margin: 0 auto 0.3rem;
-}
-
-.content ul,
-.content ol {
-  color: var(--gray);
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-.content li {
-  margin-bottom: 0.3rem;
+.home-project img {
+  width: auto;
+  height: 300px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
