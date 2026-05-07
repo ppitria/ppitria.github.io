@@ -1,0 +1,118 @@
+{
+  "project": [
+    {
+      "id": 1,
+      "title": "Analisis Penjualan Ritel Online menggunakan SQL (Dummy Project)",
+      "short_desc": "Menganalisis data penjualan ritel untuk memahami transaksi dan perilaku pelanggan menggunakan SQL.",
+      "desc": "Proyek ini merupakan latihan <strong>eksplorasi data menggunakan SQL untuk memahami penggunaan query dalam proses analisis sederhana</strong>. Fokus utamanya adalah menulis dan mengoptimalkan <strong>perintah SQL seperti JOIN, GROUP BY, dan fungsi agregasi (SUM, COUNT, AVG)</strong> untuk menghasilkan informasi dasar seperti <strong>total transaksi, pendapatan, pelanggan teraktif, dan distribusi penjualan berdasarkan lokasi</strong>.Walaupun proyek ini bersifat eksploratif, prosesnya membantu saya memahami penggunaan SQL sebagai alat dalam pengolahan dan interpretasi data mentah. Melalui proyek ini, saya belajar menyusun query yang efisien, menjaga konsistensi struktur database, serta memperoleh insight dasar dari data hanya melalui kode SQL.",
+      "img_url": "./assets/img/1_Online Retail Sales Query.png",
+      "pdf_url": "./assets/pdf/1_Online Retail Sales - SQL.pdf",
+      "list_learned": [
+        "Membuat query SQL untuk analisis deskriptif seperti total transaksi, pendapatan, dan perilaku pelanggan.",
+        "Menggunakan JOIN untuk menggabungkan beberapa tabel transaksi, pelanggan, dan produk.",
+        "Memanfaatkan GROUP BY, HAVING, dan fungsi agregasi untuk analisis berbasis kelompok.",
+        "Menulis query yang efisien, terstruktur, dan mudah dibaca dengan penggunaan alias dan komentar."
+      ],
+      "tools": "SQL, DBeaver",
+      "created_date": "Agustus 2025"
+    },
+    {
+      "id": 2,
+      "title": "Analisis & Visualisasi Data Penjualan menggunakan Microsoft Excel (Dummy Project)",
+      "short_desc": "Analisis data penjualan yang terdiri dari 547 transaksi dari Maret 2020 hingga Maret 2025 menggunakan dashboard interaktif berbasis Excel untuk memvisualisasikan kinerja penjualan secara dinamis, termasuk pendapatan, laba, dan metrik informasi pelanggan.",
+      "desc": "Proyek ini merupakan studi kasus pembelajaran yang bertujuan untuk memahami bagaimana menganalisis data penjualan dengan menelusuri tren penjualan, profit margin, nilai transaksi rata-rata (AOV), serta performa antar wilayah dengan memanfaatkan Pivot Table dan visualisasi interaktif menggunakan Excel. Dataset yang digunakan berisi <strong>547 transaksi dari periode Maret 2020 hingga Maret 2025</strong>, yang diambil dari Kaggle. Hasil eksplorasi menunjukkan bahwa dari total 547 transaksi selama 2020–2025, <strong>profit margin rata-rata mencapai 26%</strong>, dengan puncak pendapatan di tahun 2022. Namun, mulai <strong>tahun 2023 nilai AOV mengalami penurunan</strong>, berdampak pada <strong>penurunan profit margin menjadi sekitar 19.7% di 2024</strong>.",
+      "img_url": "./assets/img/2_Sales Transaction Dashboard.png",
+      "pdf_url": "./assets/pdf/2_Sales Transaction - Excel.pdf",
+      "list_learned": [
+        "Mengasah kemampuan saya dalam storytelling dengan data.",
+        "Mengorganisir data agar siap dianalisis di Excel.",
+        "Menggunakan PivotTable untuk mengeksplorasi dan meringkas data.",
+        "Merancang dashboard interaktif dengan memanfaatkan PivotChart."
+      ],
+      "tools": "Microsoft Excel",
+      "created_date": "September 2025"
+    },
+    {
+      "id": 3,
+      "title": "Deteksi Teks Generatif AI pada Sistem Penilaian Otomatis (Thesis Project)",
+      "short_desc": "Fine-tuning IndoBERT untuk model deteksi teks generatif AI untuk diintegrasikan pada sistem penilaian otomatis.",
+      "desc": "Proyek ini merupakan penelitian tugas akhir yang berfokus pada deteksi teks generatif AI dalam sistem penilaian esai otomatis. Tujuannya adalah mengukur persentase kemungkinan suatu jawaban dihasilkan oleh AI. Hasil akhir berupa sistem yang mengintegrasikan <strong>model deteksi teks generatif dengan akurasi 92%</strong>, dibangun melalui <strong>fine-tuning IndoBERT dari Hugging Face</strong>. Proyek ini juga dituangkan dalam <strong>artikel ilmiah</strong> yang dapat diakses di tautan berikut (<a href='https://jurnal.untan.ac.id/index.php/jepin/article/view/93221' target='_blank'>Deteksi Generatif Teks pada Penilaian Otomatis Tes Esai Berbahasa Indonesia Menggunakan IndoBERT</a>). <br />Proyek ini juga dapat dilihat pada Github berikut (<a href='https://github.com/ppitria/MyPortfolio/tree/1a7465c70b5852607ff6a65546c13f4793f6ca4d/DETEKSI_PENILAIAN' target='_blank'>Deteksi Penilaian</a>)",
+      "img_url": "./assets/img/3_Detection GenAI.png",
+      "pdf_url": "./assets/pdf/3_Detection GenAI - Python.pdf",
+      "list_learned": [
+        "Melakukan fine-tuning model pre-trained IndoBERT untuk tugas klasifikasi spesifik.",
+        "Memahami pentingnya persiapan dan kualitas data sebelum proses training untuk mendapatkan hasil yang optimal.",
+        "Mempelajari pengaturan hyperparameter dalam proses optimasi model.",
+        "Mengimplementasikan model deteksi ke dalam web sederhana menggunakan Flask.",
+        "Menyusun dan mempublikasikan hasil penelitian dalam bentuk artikel ilmiah."
+      ],
+      "tools": "Python",
+      "created_date": "Oktober 2025"
+    },
+    {
+      "id": 4,
+      "title": "Perbandingan Penjualan Restoran Bulanan (Dummy Project)",
+      "short_desc": "Merancang dasbor interaktif di Tableau untuk memvisualisasikan kinerja penjualan restoran dibandingkan dengan bulan sebelumnya, termasuk analisis produk terlaris, pertumbuhan kota, dan preferensi metode pembayaran.",
+      "desc": "Proyek ini merupakan latihan eksplorasi data menggunakan tableau, dengan tujuan memahami cara membangun dashboard interaktif untuk membandingkan performa penjualan bulanan berdasarkan data dummy untuk periode November–Desember 2022. Secara keseluruhan, data menunjukkan <strong>peningkatan penjualan pada bulan Desember yaitu sekitar 31% dibandingkan bulan sebelumnya</strong>. Berdasarkan wilayah, <strong>Berlin dan Lisbon mencatat peningkatan signifikan antara 200–700%, sementara Paris mengalami penurunan sekitar 40%</strong>, yang menunjukkan perlunya evaluasi strategi penjualan karena penurunan terjadi hampir di semua produk. Dari sisi produk, <strong>Burger menjadi menu dengan penjualan tertinggi</strong> sekaligus mengalami kenaikan sekitar 50%, sedangkan Fries turun sekitar 5%. Diperlukan inisiatif promosi seperti bundling dengan Burger atau diskon musiman untuk meningkatkan kembali performa penjualan Fries. Dashboard dapat diakses pada tautan Tableau Public berikut: <a href='https://public.tableau.com/app/profile/pitriani.pitriani/viz/RestaurantSalesMonthAnalysisBelajar/Dashboard' target='_blank'>Buka Dashboard</a>",
+      "img_url": "./assets/img/4_Restaurant Sales Dashboard.png",
+      "pdf_url": "./assets/pdf/4_Restaurant Sales - Tableau.pdf",
+      "list_learned": [
+        "Memahami cara membuat dan menghubungkan visualisasi data di Tableau.",
+        "Belajar membandingkan performa penjualan antar periode menggunakan visualisasi dinamis.",
+        "Mengasah kemampuan dasar desain dashboard agar mudah dipahami dan mendukung pengambilan keputusan.",
+        "Mengerti bagaimana data sederhana dapat diubah menjadi insight bisnis visual."
+      ],
+      "tools": "Tableau",
+      "created_date": "Oktober 2025"
+    }
+  ],
+  "about": [
+    {
+      "bio_text": "Saya Pitriani lulusan Teknik Informatika dari UIN Sunan Gunung Djati Bandung, dengan ketertarikan di bidang pengolahan data, otomatisasi, dan membangun alur kerja yang lebih terstruktur dan efisien. </br></br>Ketertarikan ini bermula dari proyek-proyek akademis yang melibatkan analisis dan pengelolaan data. Dari situ saya mulai mengeksplorasi bagaimana data bisa diolah menjadi sesuatu yang benar-benar berguna untuk mendukung pekerjaan nyata. </br></br>Saya terbiasa bekerja dengan Python, SQL, dan Microsoft Excel untuk pengolahan data, validasi, dan otomatisasi sederhana. Selain itu saya juga punya pengalaman dalam pengelolaan data di lingkungan kerja nyata melalui magang di instansi pemerintahan. </br></br>Portofolio ini saya buat untuk mendokumentasikan berbagai proyek,  mulai dari analisis data hingga tools dan template berbasis alur kerja, sebagai bagian dari proses belajar saya yang terus berlanjut. </br></br>Untuk informasi lebih lengkap mengenai pengalaman dan keterampilan saya, CV saya dapat diakses melalui tautan berikut: <a href='https://drive.google.com/drive/folders/1I_mVJiFR6KUNvVe5aUoPNHnlSx3rcK_E?usp=sharing' target='_blank'>Link CV Terbaru</a>"
+    }
+  ],
+  "course": [
+    {
+      "id": 1,
+      "course_name": "Belajar Dasar Structured Query Language (SQL)",
+      "provider": "Dicoding Indonesia",
+      "year": "Oktober 2024",
+      "certificate": "./assets/certificate/image-blank.jpg"
+    },
+    {
+      "id": 2,
+      "course_name": "Microsoft Office Specialist (MOS) - Excel",
+      "provider": "PTIPD UIN SGD Bandung",
+      "year": "Oktober-Desember 2024",
+      "certificate": "./assets/certificate/image-blank.jpg"
+    },
+    {
+      "id": 3,
+      "course_name": "Fundamental Data Science",
+      "provider": "Digital Talent Scholarship",
+      "year": "Juni-Juli 2025",
+      "certificate": "./assets/certificate/Fundamental Data Science.png"
+    },
+    {
+      "id": 4,
+      "course_name": "Intermediate Data Science",
+      "provider": "Digital Talent Scholarship",
+      "year": "Juli-Agustus 2025",
+      "certificate": "./assets/certificate/Intermediate Data Science.png"
+    },
+    {
+      "id": 5,
+      "course_name": "Associate Data Scientist + Python - Nasional",
+      "provider": "Digital Talent Scholarship",
+      "year": "Februari 2026",
+      "certificate": "./assets/certificate/Associate Data Science - Python - Nasional.png"
+    },
+    {
+      "id": 6,
+      "course_name": "Data Scientist Supervisor - Nasional",
+      "provider": "Digital Talent Scholarship",
+      "year": "Februari 2026",
+      "certificate": "./assets/certificate/Data Scientist Surpevisor - Nasional.png"
+    }
+  ]
+}

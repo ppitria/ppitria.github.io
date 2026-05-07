@@ -38,8 +38,8 @@
     <div class="sidebar" id="sidebar">
       <ul>
         <li><a href="index.html">Beranda</a></li>
-        <li><a href="#aboutme">Tentang Saya</a></li>
-        <li><a href="#course">Pelatihan & Kursus Online</a></li>
+        <li><a href="about.html">Tentang Saya</a></li>
+        <li><a href="about.html#course">Pelatihan & Kursus Online</a></li>
         <li><a href="#contact">Kontak</a></li>
       </ul>
     </div>
@@ -48,30 +48,19 @@
     <div class="overlay" id="overlay"></div>
 
     <main>
-      <section class="home">
-        <div class="container text-center">
-          <div class="line"></div>
-          <h2 class="header-2">Tentang Saya</h2>
-          <div class="line"></div>
-          <div class="aboutme" id="aboutme">
-            <div class="loading-spinner">
-              <i class="fa-solid fa-spinner fa-spin"></i>
-            </div>
-          </div>
+      <section class="container home-project" id="project-detail-content">
+        <div class="loading-spinner">
+          <i class="fa-solid fa-spinner fa-spin"></i>
         </div>
-        <div id="course" class="container course">
-          <div class="line"></div>
-          <h2 class="header-2">Training & Online Course</h2>
-          <div class="line"></div>
-          <p>
-            Untuk terus mengembangkan kemampuan saya, saya telah mengikuti
-            berbagai pelatihan dan kursus online, antara lain:
-          </p>
-          <div class="list-course" id="list-course">
-            <div class="loading-spinner">
-              <i class="fa-solid fa-spinner fa-spin"></i>
-            </div>
-          </div>
+        <h1 id="proj-title"></h1>
+        <h3 id="proj-short-desc"></h3>
+        <div class="line"></div>
+        <div id="proj-desc"></div>
+        <div id="proj-media-container"></div>
+        <div id="proj-list-learned"></div>
+
+        <div class="btn-center">
+          <a href="index.html" class="center-btn">Kembali ke Beranda</a>
         </div>
       </section>
     </main>

@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Data</title>
+    <title>Portofolio Data</title>
 
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/icon.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="container">
-        <a href="../index.html" class="navbar-brand"
-          ><strong>Pitri'</strong><span>Portfolio</span></a
+        <a href="index.html" class="navbar-brand"
+          ><strong>Pitri'</strong><span>Portofolio</span></a
         >
         <div class="menu-toggle">
           <span class="menu-text">MENU</span>
@@ -33,10 +37,10 @@
     <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="/about.html">About Me</a></li>
-        <li><a href="/about.html#course">Training & Online Course</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="about.html">Tentang Saya</a></li>
+        <li><a href="about.html#course">Pelatihan & Kursus Online</a></li>
+        <li><a href="#contact">Kontak</a></li>
       </ul>
     </div>
 
@@ -47,138 +51,29 @@
       <!-- Home -->
       <section id="home" class="home">
         <div class="container text-center">
-          <h1>Hi, my name is Pitriani</h1>
+          <h1>Halo👋, Saya Pitriani</h1>
           <p>
-            Welcome to my portfolio. Here, I share projects related to data
-            processing, workflow development, and simple automation. Each
-            project reflects how I approach problems in a structured way and
-            build practical, useful solutions.
+            Selamat datang di portofolio saya. Di sini, saya berbagi
+            proyek-proyek seputar pengolahan data, pengembangan alur kerja, dan
+            otomasi sederhana. Setiap proyek mencerminkan cara saya mendekati
+            masalah secara terstruktur dan membangun solusi yang praktis dan
+            bermanfaat.
           </p>
         </div>
-        <div class="btn-aboutme">
-          <a href="/about.html" class="aboutme-btn">About Me</a>
+        <div class="btn-center">
+          <a href="about.html" class="center-btn">Tentang Saya</a>
         </div>
       </section>
 
-      <!-- Project -->
+      <!-- Projects -->
       <section class="projects" id="project">
         <div class="line"></div>
-        <h2>My Own Project</h2>
+        <h2 class="header-2">Project</h2>
         <div class="line"></div>
-        <div class="container">
-          <!-- financial recal -->
-          <div class="project-item">
-            <img
-              src="/media/5_Rekap Keuangan (2) - Spreadsheet.png"
-              alt="Financial Tracker"
-            />
-            <div class="project-text">
-              <h3>Financial Tracker (Template Worksheet)</h3>
-              <p>
-                Designing a worksheet template to help with the process of
-                structured financial recapitulation and monitoring.
-              </p>
 
-              <div class="btn-container">
-                <a href="/content/rekap_keuangan.html" class="btn-custom"
-                  >View Detail</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- tableau-restaurant sales -->
-          <div class="project-item">
-            <img
-              src="/media/4_Restaurant Sales Dashboard.png"
-              alt="Restuarant Sales Dashboard"
-            />
-            <div class="project-text">
-              <h3>Monthly Restaurant Sales Comparison (Dummy Project)</h3>
-              <p>
-                Designing an interactive dashboard in Tableau to visualize
-                restaurant sales performance compared to the previous month,
-                including analysis of top-selling products, city growth, and
-                payment method preferences.
-              </p>
-
-              <div class="btn-container">
-                <a
-                  href="/content/restaurant_sales_tableau.html"
-                  class="btn-custom"
-                  >View Detail</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- python-text detection (TA) -->
-          <div class="project-item">
-            <img
-              src="/media/3_Detection GenAI.png"
-              alt="Loss Training & Validation"
-            />
-            <div class="project-text">
-              <h3>AI-Generated Text Detection (Thesis)</h3>
-              <p>
-                Designing an AI Generative Text Detection Model for an Automated
-                Essay Assessment System through Fine-Tuning IndoBERT.
-              </p>
-
-              <div class="btn-container">
-                <a
-                  href="/content/deteksi_penilaian_python.html"
-                  class="btn-custom"
-                  >View Detail</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- excel-sales transaction dashboard -->
-          <div class="project-item">
-            <img
-              src="/media/2-Sales Transaction Dashboard.png"
-              alt="Dashboard Sales Transactions"
-            />
-            <div class="project-text">
-              <h3>Sales Transactions Analysis (Dummy Project)</h3>
-              <p>
-                An exploration of sales data consisting of 547 transactions from
-                March 2020 to March 2025 using an interactive Excel-based
-                dashboard to dynamically visualize sales performance, including
-                revenue, profit, and customer information metrics.
-              </p>
-
-              <div class="btn-container">
-                <a href="/content/sales_dashboard_excel.html" class="btn-custom"
-                  >View Detail</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- sql-online retail sales -->
-          <div class="project-item">
-            <img
-              src="/media/1_Online Retail Sales Query.png"
-              alt="Simple Analysis Using SQL"
-            />
-            <div class="project-text">
-              <h3>Online Retail Sales Analysis using SQL (Dummy Project)</h3>
-              <p>
-                Exploring retail sales data to understand transaction
-                performance and customer behavior using SQL.
-              </p>
-
-              <div class="btn-container">
-                <a
-                  href="/content/online_retail_sales_sql.html"
-                  class="btn-custom"
-                  >View Detail</a
-                >
-              </div>
-            </div>
+        <div class="container" id="project-list">
+          <div class="loading-spinner">
+            <i class="fa-solid fa-spinner fa-spin"></i>
           </div>
         </div>
       </section>
@@ -204,6 +99,9 @@
       </div>
     </footer>
 
-    <script src="/scripts.js"></script>
+    <!-- SUPABASE -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
